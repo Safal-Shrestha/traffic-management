@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/client_style.css">
+    <script src="js/login_script.js"></script>
+    <title>Traffic Fine Portal - Client</title>
+</head>
+<body>
+
+    <nav class="client-nav">
+        <div class="logo">
+            <img src="Assets/Traffic management.jpeg" alt="Client Logo">
+            <span class="navbar-heading">Fine Portal</span>
+        </div>
+    </nav>
+
+    <div class="client-bg">
+        <div class="overlay"></div>
+        <div class="client-content">
+            <h2>Fine Information</h2>
+
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>User Name</th>
+                            <th>Vehicle Number</th>
+                            <th>License Number</th>
+                            <th>Fine Amount</th>
+                            <th>Paid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>ABC123</td>
+                            <td>XYZ456</td>
+                            <td>$50</td>
+                            <td>No</td>
+                        </tr>
+                        <!-- PHP will fill this part -->
+                        <!-- <?php include 'fetch_fine_data_client.php'; ?> -->
+                    </tbody>
+                </table>
+                <button class="pay-button" onclick="pay()">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional client content goes here -->
+
+</body>
+</html>
