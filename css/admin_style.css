@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #343a40;
+}
+
+nav {
+    background-color: #218838;
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: -webkit-fill-available;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Futura', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 57px;
+    height: 59px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.navbar-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Futura', sans-serif; /* Add Futura font here */
+}
+
+.content {
+    margin-top: 80px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Add Poppins font here */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #218838;
+    color: white;
+}
+
+
+.logout-btn{
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00eaff;
+    padding: 7px 11px;
+    box-shadow: #333;
+}
+
+.logout-btn:hover{
+    background-color: #00cafc;
+}
+
+.hyperlink{
+    display: contents;
+}
