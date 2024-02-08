@@ -1,4 +1,4 @@
-const int trigPin = 9;
+const int trigPin = 8;
 const int echoPin = 10;
 int distance_prev = 0;
 int sp = 0;

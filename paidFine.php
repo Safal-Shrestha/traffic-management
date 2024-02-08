@@ -1,10 +1,10 @@
 <?php
     session_start();
     include("include/db.php");
-    $result = $conn->query("SELECT traffic_fine.id as id, traffic_fine.time, users.uname as user_name, vehicle_detail.vehicle_id, vehicle_detail.license, traffic_fine.fine, traffic_fine.speed
-    FROM traffic_fine
-    JOIN users ON traffic_fine.id = users.id
-    JOIN vehicle_detail ON traffic_fine.id = vehicle_detail.id"); 
+    $result = $conn->query("SELECT paid_fine.id as id, paid_fine.time, users.uname as user_name, vehicle_detail.vehicle_id, vehicle_detail.license, paid_fine.fine, paid_fine.speed
+    FROM paid_fine
+    JOIN users ON paid_fine.id = users.id
+    JOIN vehicle_detail ON paid_fine.id = vehicle_detail.id"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +31,6 @@
             <a href="index.php" class="hyperlink">
                 <img src="Assets/Traffic management.jpeg" alt="Traffic Logo">
                 <span class="navbar-heading">Admin Portal</span>
-            </a>
-        </div>
-        <div class="div-content">
-            <a href="paidFine.php" class="hyperlink">
-                Paid Fine
             </a>
         </div>
         <div>

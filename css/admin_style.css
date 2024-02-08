@@ -88,8 +88,17 @@ th {
 
 .logout-btn:hover{
     background-color: #00cafc;
+    cursor: pointer;
 }
 
 .hyperlink{
     display: contents;
+    color: white;
+}
+
+.div-content{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
 }

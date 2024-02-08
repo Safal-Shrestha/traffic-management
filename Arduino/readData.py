@@ -62,7 +62,7 @@ try:
             fine = 100
             
             # Print the received line
-            if int(line) > 0:
+            if int(line) > 100:
                 # Example data from your Arduino
                 arduino_data = {
                     'id': 2,
@@ -85,6 +85,8 @@ try:
                     send_sms(sms_message, recipient_phone_number)
                 else:
                     print("Recipient phone number is not provided. SMS not sent.")
+                
+                
 
 
         time.sleep(1)

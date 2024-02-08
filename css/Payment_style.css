@@ -50,47 +50,63 @@ h2 {
 /* Small devices (phones, 600px and below) */
 @media only screen and (max-width: 600px) {
     img {
-        width: 80%;
-        height: 40%;
+        width: 70%; /* Reduce image width */
+        height: 25%; /* Reduce image height */
     }
 
     h2 {
         font-size: 2rem;
+    }
+
+    .go-to-fine-portal-button {
+        margin-top: 15px; /* Adjust button margin for better visibility */
     }
 }
 
 /* Medium devices (tablets, 768px and below) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     img {
-        width: 70%;
-        height: 35%;
+        width: 60%; /* Reduce image width */
+        height: 20%; /* Reduce image height */
     }
 
     h2 {
         font-size: 2.2rem;
+    }
+
+    .go-to-fine-portal-button {
+        margin-top: 15px; /* Adjust button margin for better visibility */
     }
 }
 
 /* Large devices (desktops, 992px and below) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     img {
-        width: 60%;
-        height: 30%;
+        width: 40%; /* Reduce image width */
+        height: 12%; /* Reduce image height */
     }
 
     h2 {
         font-size: 2.3rem;
+    }
+
+    .go-to-fine-portal-button {
+        margin-top: 15px; /* Adjust button margin for better visibility */
     }
 }
 
 /* Extra large devices (large desktops, 1200px and below) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     img {
-        width: 50%;
-        height: 25%;
+        width: 35%; /* Reduce image width */
+        height: 10%; /* Reduce image height */
     }
 
     h2 {
         font-size: 2.4rem;
+    }
+
+    .go-to-fine-portal-button {
+        margin-top: 10px; /* Adjust button margin for better visibility */
     }
 }
