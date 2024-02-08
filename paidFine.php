@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/admin_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura:wght@300;400;500;600;700&display=swap">
-    <title>Traffic Fine Portal - Admin</title>
+    <title>Paid Fine Portal - Admin</title>
 </head>
 <body>
     <?php

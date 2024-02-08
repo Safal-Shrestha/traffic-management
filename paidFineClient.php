@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/client_style.css">
     <script src="js/login_script.js"></script>
-    <title>Traffic Fine Portal - Client</title>
+    <title>Paid Fine Portal - Client</title>
 </head>
 <body>
     <?php
@@ -25,21 +25,16 @@
             header("Location: index.php");
         }
         $activeId = $_SESSION["uid"];
-        $result = $conn->query("SELECT traffic_fine.id as id, traffic_fine.time, users.uname as user_name, vehicle_detail.vehicle_id, vehicle_detail.license, traffic_fine.fine, traffic_fine.speed
-        FROM traffic_fine
-        JOIN users ON traffic_fine.id = users.id
-        JOIN vehicle_detail ON traffic_fine.id = vehicle_detail.id WHERE users.id = $activeId");
+        $result = $conn->query("SELECT paid_fine.id as id, paid_fine.time, users.uname as user_name, vehicle_detail.vehicle_id, vehicle_detail.license, paid_fine.fine, paid_fine.speed
+        FROM paid_fine
+        JOIN users ON paid_fine.id = users.id
+        JOIN vehicle_detail ON paid_fine.id = vehicle_detail.id WHERE users.id = $activeId");
     ?>
     <nav class="client-nav">
         <div class="logo">
             <a href="index.php" class="hyperlink">
                 <img src="Assets/Traffic management.jpeg" alt="Client Logo">
                 <span class="navbar-heading">Fine Portal</span>
-            </a>
-        </div>
-        <div class="div-content">
-            <a href="paidFineClient.php" class="hyperlink">
-                Paid Fine
             </a>
         </div>
         <div>
@@ -88,16 +83,8 @@
                             <td><?php echo $fine?></td>
                         </tr>
                     <?php } ?>
-                    <tr>
-                        <?php 
-                            $total = $conn->query("SELECT SUM(fine) as total_sum FROM traffic_fine WHERE id = $activeId");
-                        ?>
-                        <td colspan="6">Total</td>
-                        <td><?php while($sum = $total->fetch_assoc()){echo $sum['total_sum'];}?></td>
-                    </tr>
                     </tbody>
                 </table>
-                <button class="card-content pay-button" onclick="pay()">Pay Now</button>
             </div>
         </div>
     </div>
